@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             Title="Caculator - C#"
+             x:Class="Caculator.MainPage">
+
+    <StackLayout>
+        <Grid  ColumnSpacing="5" RowSpacing="5" BackgroundColor="Black">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="3*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Label x:Name="Expression" BackgroundColor="Black" FontSize="36" Margin="5" TextColor="White" HorizontalOptions="End" VerticalOptions="Center" Grid.Row="0" Grid.Column="0" Grid.RowSpan="3" Grid.ColumnSpan="4"/>
+            <Label x:Name="Result" Text="0" BackgroundColor="Black" FontSize="36" Margin="5" TextColor="White" HorizontalOptions="End" VerticalOptions="Fill" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4"/>
+            <Button x:Name="cmdC" Text="C" BackgroundColor="LightGray" Grid.Column="0" Grid.Row="2" Clicked="CmdC_Clicked"/>
+            <Button x:Name="cmdAddSub" Text="+/-" BackgroundColor="LightGray" Grid.Column="1" Grid.Row="2"/>
+            <Button x:Name="cmdMod" Text="%" BackgroundColor="LightGray" Grid.Column="2" Grid.Row="2"/>
+            <Button x:Name="cmdDiv" Text="DIV" BackgroundColor="#F1C40F" Grid.Column="3" Grid.Row="2"/>
+            <Button x:Name="cmd7" Text="7" BackgroundColor="White" Grid.Column="0" Grid.Row="3" Clicked="Cmd7_Clicked"/>
+            <Button x:Name="cmd8" Text="8" BackgroundColor="White" Grid.Column="1" Grid.Row="3" Clicked="Cmd8_Clicked"/>
+            <Button x:Name="cmd9" Text="9" BackgroundColor="White" Grid.Column="2" Grid.Row="3" Clicked="Cmd9_Clicked"/>
+            <Button x:Name="cmdX" Text="X" BackgroundColor="#F1C40F" Grid.Column="3" Grid.Row="3" Clicked="CmdX_Clicked"/>
+            <Button x:Name="cmd4" Text="4" BackgroundColor="White" Grid.Column="0" Grid.Row="4" Clicked="Cmd4_Clicked"/>
+            <Button x:Name="cmd5" Text="5" BackgroundColor="White" Grid.Column="1" Grid.Row="4" Clicked="Cmd5_Clicked"/>
+            <Button x:Name="cmd6" Text="6" BackgroundColor="White" Grid.Column="2" Grid.Row="4" Clicked="Cmd6_Clicked"/>
+            <Button x:Name="cmdSub" Text="-" BackgroundColor="#F1C40F" Grid.Column="3" Grid.Row="4" Clicked="CmdSub_Clicked"/>
+            <Button x:Name="cmd1" Text="1" BackgroundColor="White" Grid.Column="0" Grid.Row="5" Clicked="Cmd1_Clicked"/>
+            <Button x:Name="cmd2" Text="2" BackgroundColor="White" Grid.Column="1" Grid.Row="5" Clicked="Cmd2_Clicked"/>
+            <Button x:Name="cmd3" Text="3" BackgroundColor="White" Grid.Column="2" Grid.Row="5" Clicked="Cmd3_Clicked"/>
+            <Button x:Name="cmdAdd" Text="+" BackgroundColor="#F1C40F" Grid.Column="3" Grid.Row="5" Clicked="CmdAdd_Clicked"/>
+            <Button x:Name="cmd0" Text="0" BackgroundColor="White" Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="6" Clicked="Cmd0_Clicked"/>
+            <Button x:Name="cmdPoint" Text="." BackgroundColor="White" Grid.Column="2" Grid.Row="6" Clicked="CmdPoint_Clicked"/>
+            <Button x:Name="cmdEqual" Text="=" BackgroundColor="#F1C40F" Grid.Column="3" Grid.Row="6"/>
+        </Grid>
+    </StackLayout>
+
+</ContentPage>
